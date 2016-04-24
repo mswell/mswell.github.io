@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width" />
 
     <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <link href="assets/css/ct-paper.css" rel="stylesheet"/>
     <link href="assets/css/demo.css" rel="stylesheet" />
     <link href="assets/css/examples.css" rel="stylesheet" />
@@ -60,18 +61,61 @@
              <h5>Get a 10% discount on selected products until the 5th of November!</h5>
         </div>
     </div>
-
     <div class="wrapper">
-        <div class="landing-header" style="background-image: url('assets/paper_img/cat.jpg');">
-            <div class="container">
-                <div class="motto">
-                    <h1 class="title-uppercase">Example page</h1>
-                    <h3>Start designing your landing page here.</h3>
-                    <br />
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn"><i class="fa fa-play"></i>Watch video</a>
-                    <a class="btn">Download</a>
+        <div class="landing-header">
+            <!-- The carousel -->
+            <div id="transition-timer-carousel" class="carousel slide transition-timer-carousel" data-ride="carousel">
+    			<!-- Indicators -->
+    			<ol class="carousel-indicators">
+    				<li data-target="#transition-timer-carousel" data-slide-to="0" class="active"></li>
+    				<li data-target="#transition-timer-carousel" data-slide-to="1"></li>
+    				<li data-target="#transition-timer-carousel" data-slide-to="2"></li>
+    			</ol>
+
+    			<!-- Wrapper for slides -->
+    			<div class="carousel-inner">
+    				<div class="item active" style="background-image: url('assets/paper_img/cat.jpg');">
+                        <!-- <img src="http://placehold.it/1200x400" /> -->
+                        <div class="carousel-caption">
+                            <h1 class="carousel-caption-header">Slide 1</h1>
+                            <p class="carousel-caption-text hidden-sm hidden-xs">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim aliquet rutrum. Praesent vitae ante in nisi condimentum egestas. Aliquam.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/paper_img/cat.jpg" />
+                        <div class="carousel-caption">
+                            <h1 class="carousel-caption-header">Slide 2</h1>
+                            <p class="carousel-caption-text hidden-sm hidden-xs">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim aliquet rutrum. Praesent vitae ante in nisi condimentum egestas. Aliquam.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="assets/paper_img/cat.jpg" />
+                        <div class="carousel-caption">
+                            <h1 class="carousel-caption-header">Slide 3</h1>
+                            <p class="carousel-caption-text hidden-sm hidden-xs">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim aliquet rutrum. Praesent vitae ante in nisi condimentum egestas. Aliquam.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+
+    			<!-- Controls -->
+    			<a class="left carousel-control" href="#transition-timer-carousel" data-slide="prev">
+    				<span class="glyphicon"></span>
+    			</a>
+    			<a class="right carousel-control" href="#transition-timer-carousel" data-slide="next">
+    				<span class="glyphicon"></span>
+    			</a>
+
+                <!-- Timer "progress bar" -->
+                <hr class="transition-timer-carousel-progress-bar animate" />
+    		</div>
         </div>
         <div class="main">
             <div class="section text-center landing-section">
@@ -207,6 +251,7 @@
 <script src="assets/js/ct-paper-checkbox.js"></script>
 <script src="assets/js/ct-paper-radio.js"></script>
 <script src="assets/js/bootstrap-select.js"></script>
+<script src="assets/js/carousel.js"></script>
 <script src="assets/js/bootstrap-datepicker.js"></script>
 
 <script src="assets/js/ct-paper.js"></script>
